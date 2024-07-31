@@ -6,16 +6,17 @@ chemistry=int(input("enter your chemistry marks:"))
 if maths<35 or physics<35 or chemistry<35:
     print(f"the student {name} is failed")
 else:
-    print(f"the student {name} is passed")
+    result="pass"
     total=maths+physics+chemistry
-    print(f"the total marks of {name} is : {total}")
     avg=total/3
-    print(f"the avgerage marks of {name} is : {avg}")
-    if avg > 70:
-        print(f"the student {name} is in first class")
+    if avg > 60:
+        grade="first"
     elif avg >50:
-        print(f"the student {name} is in second class")
+        grade="second"
     else:
-        print(f"the student {name} is in third class")
+        grade="third"
+    print(f"the student {name} is {result}")
+    print(f"the student {name} total is :{total}")
+    print(f"the student {name} avg is :{avg}")
+    print(f"the grade is {grade}")
     
-
